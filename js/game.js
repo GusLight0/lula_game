@@ -37,7 +37,7 @@ function newMove(e) {
     img.style.width = "147px";
     img.style.height = "147px";
 
-    e.target.appendChild(img);
+    e.target.closest("button").appendChild(img);
     e.target.removeEventListener("click", newMove);
     selected[index] = player;
 
